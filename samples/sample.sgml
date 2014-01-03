@@ -1,0 +1,17 @@
+<sgml>
+		<some_value = "something"/>
+
+		<AnObject>
+			<value1 = "blarg"/>
+			<value2 = 0/>
+			<value3 = 1.10/>
+			<value4 = ENABLED/>
+		</AnObject>
+
+		<AnOtherObject>
+			<YetMoreValues = "foo"/>
+			<ASubObject>
+				<value1 = "bar"/>	
+			</ASubObject>
+		</AnOtherObject>
+</sgml>

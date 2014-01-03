@@ -1,0 +1,5 @@
+<==--- The design ---==>
+
+The basic idea is to make a game framework that is simple to use for the novice to midrange developer, yet also extensable enough to be used as a framework for highlevel developers. This will be acheived by providing features as seperate classes or managers. Some features will be interlinked, such as texture manager needs to use the file system classes to load files. For the basic user the default managers and classes will provide many of the common features needed in graphics/game programing. For the advanced user, handlers for more complex implementations of various class backends can be installed with each class. Each class needs to allow for new handlers to be installed, such as ones that can read from zip files for the file system classes, Texture handlers that build textures from font renderers, etc....
+
+That's the basic idea.

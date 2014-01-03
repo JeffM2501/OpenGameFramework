@@ -1,0 +1,27 @@
+Here is a list of the core game classes and their intended purpose.
+
+Time:
+	Time provides acurate time in seconds since the class was initalised, and also per frame times. On windows it uses QueryPerformanceCounter, for the best posible time. On other OSes it uses what ever SDL does for them
+
+OSFile:
+	OSFile provides an abstration to disk based files and directorys. All paths sent into the classes are in unix standard format. The class will convert and manage the files in the OSes native format. COSDir can also be used to search a dir for files, recursivly if needed. It is used by many other libs. THis lib can also be modified to allow the use of some sort of compressed Virtual File system.
+
+SoundManager:
+	SoundManager provides a way to play many sound formats, including Mp3 and ogg. Internaly it uses the FMOD lib, but is abstracted in a way that can let the sound engine change. The lib aslso support 3d postitoonal sounds, and playlist type music managmeent.
+
+TextureManager:
+	This lib loads PNG, TGA, or BMP images and binds them to openGL textures as needed. The lib can also do some limited texturemanagement using a "texture time out" method. PNG is borked presently.
+
+LGE:
+	This lib uses SDL to bring up an OpenGL window, and manage an OpenGL state. It also has some abstration for picking and camera placemet. THe lib also includes a set of 3d math classes/functions and types/classes for common 3d structures ( matrix, vertex, color, etc.. ). The lib also includes a Frustum cliping class that can use OpenGL view to get a frustum.
+
+
+Utils:
+	Common set of utils for game stuff. Includes the Model Class, the Meny Panell base classes, the GameLoop Base class, and fucntions to keep global engine objects around.
+
+Math:
+	Common set of 3d math functions and classes. Has the 3dVertex and Matrix classes. Includes stuff like dot and cross products, and all the matrix operators. Both C style struct and C++ style classes are included, but the C style fucntions are being depriciated.
+
+Input:
+	Abstration of base device input using SDL. Exposes mouse, keys and joysticks. May need to be changed to NOT sdl for mouse and keys to support more device features (mouse wheel, and more then 3 buttons ).
+

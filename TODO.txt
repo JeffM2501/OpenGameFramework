@@ -1,0 +1,13 @@
+
+TODO
+====
+
+* Create a Virtual File system
+* Make a CLI model conversion tool.
+* Make a graphical model editor that can make skins and place tags.
+* Find out why skin saving is borked.
+* Scons?
+* Get multimessages into net, and find a way to pass them too and from server. Another callback? or just a flag?
+* figure out why sound isn't playing
+* hook up some URL parsing for streaming in sound.
+* Make sure the relaying isn't causing problems

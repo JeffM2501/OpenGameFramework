@@ -1,0 +1,21 @@
+Porting
+=======
+
+Make a folder for your build system, like there is for VC71, or changes to the makefile if your system uses that
+
+Notes on common libs:
+
+SDL:
+The system uses SDL for a number of backend implemenations ( time, intput, events, video). SDL is not included in the CVS repository, it can be aquired at http://www.libsdl.org. If your platform does not have SDL, then best of luck to ya, as your going to have to implement the backend with your own code. At present SDL version 1.2.6(CVS) is being used for development on windows, linux, and OSX.
+
+OpenGL:
+All 3d rendering is done via OpenGL (http://www.opengl.org). OpenGL 1.1 or later is required. If your platform does not support openGL then, well, it's gonna be rough, as this is the one API that is not abstracted. You will need to make a GL wraper for your system, or use a Mesa port or something.
+
+STL:
+Most of the libs use at least one, if not many STL containers. Strings, Vectors, Maps, and Sets are all used. If your platform dosn't support STL, then I would get a new platform.
+
+DevIL:
+The texture manager uses the ImageLibrary DevIL from http://www.imagelib.org, you will need to have it installed to build.
+
+
+

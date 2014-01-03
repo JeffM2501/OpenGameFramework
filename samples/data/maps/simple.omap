@@ -1,0 +1,89 @@
+<stml>
+		<world>
+			<environment>
+				<gravity = -10/>
+				<ground = 0/>
+				<terminalV = -100/>
+				<skybox>
+					<name = "velcor512"/>
+					<size = 500/>
+					<shift = 50/>
+				</skybox>
+				
+			//	<clouds>
+			//		<texture = "velcor512"/>
+			//		<size = 500/>
+			//		<shift = 200/>
+			//	</clouds>
+			</environment>
+			
+			<ground>
+				<texture = "data/textures/ground"/>
+				<size = 200/>
+				<uvscale = 25/>
+			</ground>
+			
+			<box>
+				<name ="a box"/>
+				<position = 0,0,15/>
+				<size = 10,10,5/>
+				<rotation = 45,45,45/>
+				<texture = "data/textures/Test"/>
+				<uvscale = 5/>
+			</box>
+			
+			<box>
+				<name ="another box"/>
+				<position = 100,100,45/>
+				<size = 4,4,45/>
+				<rotation = 0,0,16/>
+				<texture = "data/textures/pybzflag/caution"/>
+				<uvscale = 2/>
+				<box>
+					<name ="another box"/>
+					<position = 20,0,40/>
+					<size = 20,1,1/>
+					<rotation = 0,0,0/>
+					<texture = "data/textures/pybzflag/caution"/>
+					<uvscale = 1/>
+				</box>
+				
+				<box>
+					<name ="another box"/>
+					<position = -20,0,10/>
+					<size = 20,1,1/>
+					<rotation = 0,0,0/>
+					<texture = "data/textures/pybzflag/caution"/>
+					<uvscale = 1/>
+				</box>
+			</box>
+			
+			<group>
+				<name = "simpleGroup1"/>
+				<box>
+					<name ="a box"/>
+					<position = 0,0,10/>
+					<size = 10,10,10/>
+					<rotation = 0,0,0/>
+					<texture = "data/textures/Test"/>
+					<uvscale = 5/>
+					<texture = "data/textures/pybzflag/lightmap"/>
+					<uvscale = 10/>
+					<texture = "data/textures/pybzflag/oilstain_1"/>
+					<uvscale = 1/>
+				</box>
+			</group>
+			
+			<instance>
+				<group = "simpleGroup1"/>
+				<position = 0,-100,0/>
+			</instance>
+			
+			<instance>
+				<group = "simpleGroup1"/>
+				<position = 100,-100,0/>
+				<rotation = 45,10,190/>
+			</instance>
+			
+		</world>
+</stml>
